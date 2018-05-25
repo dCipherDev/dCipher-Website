@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Tutorials| dCipher</title>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"><!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700%7CTitillium+Web:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="assets/fonts/material-icons/material-icons.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Libraries CSS -->
+	<link href="assets/css/libraries/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/libraries/animate.css" rel="stylesheet"><!-- Custom CSS -->
+	<link href="assets/css/custom/theme.css" rel="stylesheet">
+	<link href="assets/css/custom/colors.css" rel="stylesheet"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.myslides1 {display: none}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons for slide2*/
+.prev, .next {
+  right: 101%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade in{
+  -webkit-animation-name: fade in;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade in;
+  animation-duration: 25s;
+}
+
+@-webkit-keyframes fade in{
+  from {opacity: .4} 
+  to {opacity: 4}
+}
+
+@keyframes fade in{
+  from {opacity: .4} 
+  to {opacity: 4}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  .prev2, .next2}
+}
+</style>
+	
+</head>
+<body data-spy="scroll" data-target="#st-nav" id="page-top">
+	<!-- Navigation Menu
+================================================== -->
+	<header>
+		<div id="st-logo">
+			<a href="index.html"><img alt="Logo" src="assets/images/logo-normal.png" style="max-width: 100%"></a>
+		</div>
+	</header>
+	<div id="st-nav">
+		<a class="st-nav-trigger" href="#0">Menu<span></span></a>
+		<nav id="st-main-nav">
+			<ul>
+				<li>
+					<a class="page-scroll hvr-underline-from-center" href="index.html">About</a>
+				</li>
+				<li class="dropdown">
+					<a class="page-scroll hvr-underline-from-center" href="index.html">Services</a>
+					<div class="dropdown-content">
+						<a class="page-scroll hvr-underline-from-center" href="research.html"><font size="2">Research</font></a> <a class="page-scroll hvr-underline-from-center" href="smart_contracts_development.html"><font size="2">Smart Contracts</font></a> <a class="page-scroll hvr-underline-from-center" href="training.html"><font size="2">Training</font></a> <a class="page-scroll hvr-underline-from-center" href="crypto_mining_optimization.html"><font size="2">Mining Optimizations</font></a> <a class="page-scroll hvr-underline-from-center" href="protocol_development.html"><font size="2">Protocol Development</font></a>
+					</div>
+				</li><!-- <li>
+                <a class="page-scroll hvr-underline-from-center" href="#skills">Team</a>
+            </li> -->
+				<li>
+					<a class="page-scroll hvr-underline-from-center" href="tutorials.html">Tutorials</a>
+				</li>
+				<li>
+					<a class="page-scroll hvr-underline-from-center" href="careers.html">Careers</a>
+				</li>
+				<li>
+					<a class="page-scroll hvr-underline-from-center" href="#contact">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</div><!-- /#st-nav -->
+	</div><!-- Service Item
+================================================== -->
+	<section class="service-item">
+		<div class="service-item-layer"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="typed-headline">
+						<span class="skilltechtypetext"><span class="typed-cursor">|</span></span>
+					</div><!-- /.typed-headline -->
+					<div class="service-headline-text">
+						<p>"Patience, persistence and perspiration make an unbeatable combination for success."<br></p>
+						<div class="service-item-read-more">
+							<a class="arrow-down page-scroll" href="#service-details"><i aria-hidden="true" class="fa fa-angle-down bounce"></i></a>
+						</div><!-- /.service-item-read-more -->
+					</div><!-- /.service-headline-text -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+	</section><!-- /.service-item -->
+	<!-- TUTORIALS -->>
+	<section class="service-item-details" id="service-details">
+		<div class="container">
+			<div class="row">
+		<!-- first tutorial button-->
+				<div class="col-lg-6">
+					<div class="service-text">
+						<h3>How to set up your<span > Ethereum development enviroment</span><span class="clickhere" id="clickMe1"> click here </span></span></h3>						                 
+					</div>
+				</div>
+		<!-- second tutorial button-->				
+				<div class="col-lg-6">
+						<div class="service-text">
+						<h3>How to set up your<span > Remix IDE and Metamask</span><span class="clickhere" id="clickMe2"> click here </span></h3>						                 
+					</div>										
+				</div>				
+			</div>
+		</div>
+	</section>	
+	
+	
+	<!-- First tutorial -->
+	<div id="containerTutorial1" class="alex-Tutorial">
+		<div class="slideshow-container">
+		<!--slide 1 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">We will start with the Infura environment, which, for those of you that didn`t hear of it, they describe themselves as: </p>
+			<p class="paraTutorial">“We provide secure, reliable, and scalable access to Ethereum APIs and IPFS gateways.”</p><br>
+			<p class="paraTutorial">“Infura was born with the goal of delivering stable and reliable RPC access to the internal projects within ConsenSys. As the Ethereum network began to grab the majority of blockchain developer mindshare, we recognized that Infura would be of broad interest to the entire ecosystem.”
+Basically Infura it is a set of API`s to connect to an Ethereum node, without running one locally, so without downloading the whole blockchain, which, if we speak about the main net, is already > 50 GB (but it depends on the way in which you run the node, for instance if you run a parity light node it will be around 15 GB).</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenuBold">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 2 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">We will start by registering a new free account on Infura website. </p>
+			<img src="assets/images/tutorial1/image002.png" style="width:70%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenuBold">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 3 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">After the successful registration on Infura website you will be redirected to a page containing the links to access various Infura hosted blockchain Nodes. </p>
+			<img src="assets/images/tutorial1/image003.png" style="width:100%" ><br><br>
+			<p class="paraTutorial">You will receive the same links in the welcome email Infura will send you after registration.</p>
+		    <p class="paraTutorial">For our exercise we will use this account to deploy smartcontracts on Ropsten TestNet, and this is a recommendation also for all developers, don`t try to develop directly in the main net, start by doing it on one of the testnet versions as you would like to avoid any risk to lose money before finishing the development and auditing the code properly. https://ropsten.infura.io/[your_infura_access_key]</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenuBold">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 4 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">In order to manage to deploy any Smart Contracts on any Ethereum node, Ropsten included, we will need an Ethereum Wallet.</p>
+			<p class="paraTutorial">MetaMask is one of the best options for creating and Ethereum account and storing and transferring Ethers and it is a browser extension for Chrome and Firefox web browsers, so easy to use and install as you will see below.</p>
+			<p class="paraTutorial">a.Installing MetaMask.</p>
+			<p class="paraTutorial">To install Metamask simply go to the Chrome Web Store or Firefox Addons and click on “ADD TO CHROME/FIREFOX”.</p>
+			<img src="assets/images/tutorial1/image006.png" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 5 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">b.Creating a new wallet.</p>
+			<p class="paraTutorial">To create a new wallet in MetaMask simply click on the MetaMask icon in the right upper corner of your browser.</p>
+			<img src="assets/images/tutorial1/image007.png" style="width:100%" ><br><br>
+			<p class="paraTutorial">You will need to accept the “Terms and Conditions” , insert a new password, confirm the password and save those 12 mnemonic words. In this way, by using those words, you can recover your wallet access in case something happens with it (lost device, forgot password, etc.)</p>
+			<p class="paraTutorial">Once you completed the steps above MetaMask should be installed and the wallet created, which now will be empty. In order to deploy a smart contract we will need to get some funds.</p>
+			
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 6 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">c.Getting Funds.</p>
+			<p class="paraTutorial">If we want to deploy Smart Contracts or to run transactions on Ethereum we will need to pay fees with Gas.</p>
+			<p class="paraTutorial">Note: In order to register a transaction or to deploy a smart contract to the network you will need to pay an execution fee in Gas which has a variable conversion rate to ETH over time, depending on the network usage in that specific moment.</p>
+			<p class="paraTutorial">The easiest way to get test ether is to use a faucet service. You can find many faucet websites on Google but for now we will use <a href="http://faucet.ropsten.be:3001/">“Ethereum Ropsten Faucet”</a><br><br></p>
+			<p class="paraTutorial">To get your Ropsten Wallet address click on MetaMask icon in your browser , select Ropsten Test Net</p>
+			<img src="assets/images/tutorial1/image009.png" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 7 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">After you selected Ropsten, click in the dotted menu and select Copy Address to clipboard.</p>
+			<img src="assets/images/tutorial1/image013.png" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 8 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Now we can use our address to insert it into the faucet site and click the Send button to receive TestEther.</p>
+			<img src="assets/images/tutorial1/image016.png" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 9 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">If everything went well, a few minutes later, our wallet balance should be 1 ETH :)</p>
+			<img src="assets/images/tutorial1/image017.png" style="width:80%" ><br><br>
+			<p class="paraTutorial">Now that we are done in setting our Infura account and MetaMask add-on, let’s set up the development environment.</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenuBold">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 10 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">First we will need to install NodeJS and NPM.</p>
+			<p class="paraTutorial">For windows users:</p>
+			<p class="paraTutorial">1. Download installer package from <a href = "https://nodejs.org/en/">https://nodejs.org/en </a> </p>
+			<p class="paraTutorial">2. Run the installer(the .msi file you just downloaded) and follow the prompts in the installer. Note: The recommended version at the time this tutorial was written is 8.11.1 so we will use this one.</p>
+			<p class="paraTutorial">For Ubuntu users:</p>
+			<p class="paraTutorial">Node.js is available from the NodeSource’s Debian and Ubuntu binary distributions repository.</p>
+			<p class="paraTutorial">1.	To add the repository open a Terminal and run the command: </p>
+			<p class="paraTutorial">curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - </p>
+			<p class="paraTutorial">2.	After adding the repository we will run the next command to install NodeJS 8 on our system: </p>
+			<p class="paraTutorial">sudo apt-get install -y nodejs </p>
+			<p class="paraTutorial">Note: The Node.js package contains the Node.js binary as well as NPM, so you don't need to install NPM separately. However, in order for some NPM packages to work, you will need to install the build-essentials package.</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenuBold">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 11 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Note: According to their website, Git is a distributed version control system, meaning your local copy of code is a complete version control repository.</p>
+			<p class="paraTutorial">For windows users:</p>
+			<p class="paraTutorial">To install Git on Windows you need to download the latest Git installer from the official website: <a href = "https://gitforwindows.org/">https://gitforwindows.org/</a> </p>
+			<p class="paraTutorial">After the download is completed, run the .exe installer and follow the Setup Wizard to complete the installation.</p>
+			<p class="paraTutorial">For Ubuntu users:</p>
+			<p class="paraTutorial">To install Git on Ubuntu we will use the APT package manager and run the following commands:</p>
+			<p class="paraTutorial">curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - </p>
+			<p class="paraTutorial">$ sudo apt-get update </p>
+			<p class="paraTutorial">$ sudo apt-get install git</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenuBold">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 12 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Truffle is a development environment, build by Consensys with the purpose to make create an easy way for the developers to interact, develop and deploy smart contracts in the Ethereum network.</p>
+			<p class="paraTutorial">a.	To install truffle globally, open a terminal window and run the following command(both for windows and unix): </p>
+			<p class="paraTutorial">$ npm install -g truffle</p>
+			<p class="paraTutorial">Note: On Windows, if you get the “MS BUILD” error, open and administrator CMD window and install Windows Build Tools with this command: npm install -g windows-build-tools </p>
+			<p class="paraTutorial">b.	After the installation is done , in the same terminal, we will set the path for the build tools running this command</p>
+			<p class="paraTutorial">set PATH="C:\Program Files (x86)\MSBuild\14.0\Bin"</p>
+			<p class="paraTutorial">c.	In order to use Infura’s Ropsten TestNet , in your project folder we need to install Truffle HDwallet Provider.</p>
+			<p class="paraTutorial">Note: “HD Wallet-enabled Web3 provider. Use it to sign transactions for addresses derived from a 12-word mnemonic.”</p>
+			<p class="paraTutorial">$ npm install truffle-hdwallet-provider</p>
+			<p class="paraTutorial">d.	The next step is to modify your project’s truffle.js to add a condition to check for the installation of the HDWallet Provider and add your 12-word mnemonic of the account you want to use to deploy on Ropsten (in order to use it to pay the gas fees from):</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenuBold">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 13 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">NOTE: To find your 12-word mnemonic, go in MetaMask, click on the Menu button, click on Settings, click on “Reveal Seed Words”, enter your password and copy those 12 words.</p>
+		    <img src="assets/images/tutorial1/image019.png" style="width:80%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenuBold">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 14 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">So, your project’s truffle.js file should look something like this, the only thing you need to modify is the value of the mnemonic variable and set it with your own 12 words from MetaMask:</p>
+			<p>							
+			<?prettify?>
+			<pre class="prettyprint">
+		var HDWalletProvider = require("truffle-hdwallet-provider"); 
+
+			var mnemonic = "tonight column vote soap random engaged lion set spirit master execute dad";
+
+			module.exports = {
+				networks: {
+				development: {
+				host: "localhost",
+				port: 8545,
+				network_id: "*" // Match any network id
+					},
+				ropsten: {
+				provider: new HDWalletProvider(mnemonic, "https://ropsten.infura.io/"),
+				network_id: 3,
+				gas: 471238
+					}
+				}
+			};
+			</pre>
+			</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenuBold">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 15 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Good, now that everything is installed and (hopefully) ready to go, let’s test the installation.</p>
+			<p class="paraTutorial">To test it, we are going to unbox an example set of smart contracts provided by Truffle, modify truffle.js with the correct settings, deploy the smart contracts on Infura’s Ropsten TestNet and interact with them.</p>
+			<p class="paraTutorial">The test will be done in Ubuntu 16.04 but the workflow and commands are the same in Windows.</p>
+			<p class="paraTutorial">$ mkdir webpack </p>
+			<img src="assets/images/tutorial1/image023.png" style="width:80%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenuBold">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 16 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">b.	When you are inside the newly created directory, lets unbox the sample webpack with the following command:</p>
+			<p class="paraTutorial">$ truffle unbox webpack</p>
+			<img src="assets/images/tutorial1/image025.png" style="width:80%" ><br><br>		
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenuBold">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 17 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">c.	Next we must install in the project’s folder the “truffle-hdwallet-provider” using the command:</p>
+			<p class="paraTutorial">$ npm install truffle-hdwallet-provider</p>
+			<img src="assets/images/tutorial1/image027.png" style="width:80%" ><br><br>		
+			<img src="assets/images/tutorial1/image029.png" style="width:80%" ><br><br>	
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenuBold">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 18 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">d.	Once the installation is done, we must edit truffle.js to use truffle-hdwallet-provider and to import our mnemonic phrase. (please refer to point ”5.d” in this tutorial if you don’t know how to do that).</p>
+			<p class="paraTutorial">e.	After we are done editing truffle.js we are ready to compile our project with the command:</p>
+			<p class="paraTutorial">$ truffle compile</p>
+			<img src="assets/images/tutorial1/image031.png" style="width:80%" ><br><br>		
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenuBold">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 19 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">f.	If everything is ok and the compilation process didn’t thrown any errors we can deploy the contracts to the network with the command:</p>
+			<p class="paraTutorial">$ truffle migrate –network ropsten --reset </p>
+			<img src="assets/images/tutorial1/image033.png" style="width:60%" ><br><br>	
+			<p class="paraTutorial">If your message looks the same as the message above…CONGRATS!! You have deployed your first smart contract on the Ethereum TestNe</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenuBold">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenu">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 20 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">There are many ways to interact with our deployed smart contracts, starting with the base client Mist, or third party ones parity, MyCrypto, and many others.</p>
+			<p class="paraTutorial">For our example we will use the website <a href="https://mycrypto.com/#contracts">MyCrypto.com</a> .<br><br></p>	
+			<p class="paraTutorial">Note: MyCrypto.com is a forked version of the old MyEtherWallet.com, which is a multi-purpose Ethereum platform.</p>
+			<img src="assets/images/tutorial1/image036.png" style="width:100%" ><br><br>
+			<p class="paraTutorial">Steps to interact with the contract:</p>
+			<p class="paraTutorial">a.	Navigate to MyCrypto.com</p>
+			<p class="paraTutorial">b.	Go to Contracts section.</p>
+			<p class="paraTutorial">c.	Change the network to Ropsten (infura.io).</p>
+			<p class="paraTutorial">d.	Insert in the field “Contract Address” the address truffle reported upon the creation of the contract(see point 6.f)</p>
+			<p class="paraTutorial">e.	Insert in the “ABI / JSON Interface” field the abi of the contract.</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenuBold">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 21 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Note: You can find the abi in your project folder at path:</p>
+			<p class="paraTutorial">/build/contracts/.json</p>	
+			<p class="paraTutorial">The ABI starts after “abi”: and ends before ,”bytecode”: as you can see in the pictures below: </p>
+			<img src="assets/images/tutorial1/image0378.png" style="width:80%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenuBold">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 22 -->
+		<div class="mySlides1 fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">f.	After we finished inserting the required field we need to click on “Access” button to access the functions of the contract.</p>
+			<img src="assets/images/tutorial1/image042.png" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide1(1)" class="rightMenu">Registering with Infura</span> <br></br>
+		   <span onclick="currentSlide1(4)" class="rightMenu">Setup Metamask, Create Wallet, Get Founds</span> <br></br>
+		   <span onclick="currentSlide1(10)" class="rightMenu">Installing NodeJs and NPM</span> <br></br>
+		   <span onclick="currentSlide1(11)" class="rightMenu">Git Installation <br></br>
+		   <span onclick="currentSlide1(12)" class="rightMenu">Installation and Configure Truffle<br></br>
+		   <span onclick="currentSlide1(15)" class="rightMenu">Using Truffle on Ropsten<br></br>
+		   <span onclick="currentSlide1(20)" class="rightMenuBold">Interacting With Our Deployed Smart Contract<br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		
+			<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+		</div>
+		<br>
+
+			<br>
+	</div>
+	  
+	<!-- Second tutorial -->
+	<div id="containerTutorial2" class="alex-Tutorial">
+		<div class="slideshow-container">
+		<!--slide 1 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">One of the best and easy-to use tool do build, deploy and debug smart contracts is Remix IDE  (remix.ethereum.org ), which is an online browser based-compiler and IDE (Integrated development environment) that enables developers to build and deploy smarts contracts using the Solidity language but also to debug transactions. More about this you can find on <a href="https://github.com/ethereum/remix-ide">www.github.com/ethereum/remix-ide</a></p>
+			<p class="paraTutorial">One of the easiest way to access the Ethereum blockchain is to use the browser extension Metamask, that allows anyone to interact with Ethereum blockchain without running a full node. <a href="https://metamask.io">https://metamask.io</a><br>
+			<p class="paraTutorial">For our example we will connect to the Ropsten Test Network, but Metamask allows you to connect to all the official Ethereum test networks, local running node and even the Main Ethereum Network. As always, we have to remind you: Safety first! Don`t forget that deploying smart contracts and making transactions on the main network will imply some risk. Always develop and test your code vigorously on the test environments before deploying it on the main one.</p>
+		    <img src="assets/images/tutorial2/ropsten-test-network.jpg" style="width:100%" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenuBold">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 		 
+		</div>
+		<!--slide 2 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">In order to be able to deploy code on the Ethereum network, we will need some funds, some test Ethers. We can use that by mining, or by using a faucet service. To get test Ether you will need to access http://faucet.ropsten.be:3001,  then add your Ropsten Ethereum address, for example: 0x0D6CE14b31A5a5F7e3F206AE9a022D59ACAAaCFF</p>
+		    <img src="assets/images/tutorial2/ethereum-faucet.jpg" style="width:100%; padding-left: 3%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenuBold">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		<!--slide 3 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">If we go on TxHash (Transaction Hash), we will see we just received 1 ETH, enough for us to play with the Ropsten network:</p>
+			<p style="color:#8cbfd1; font-size: 14px;line-height: 24px;"><a href="https://ropsten.etherscan.io/tx/0x355e2625d0236e46402342e3bc5b1892a6f06b946e948931d1f563fb8b604d5f"> https://ropsten.etherscan.io/tx/0x355e2625d0236e46402342e3bc5b1892a6f06b946e948931d1f563fb8b604d5f </a></p>
+		    <p class="paraTutorial">In order to interact with a smart contract on the Remix IDE and Metamask, we will need first to deploy one. Let`s follow the bellow example for a simple contract that stores a value: </p>				<br><br>
+			<p>							
+			<?prettify?>
+			<pre class="prettyprint">
+			pragma solidity ^0.4.0;
+
+			contract SimpleStorage {
+				uint storedData;
+
+				function set(uint x) public {
+					storedData = x;
+				}
+
+				function get() public constant returns (uint) {
+					return storedData;
+				}
+			}
+			</pre>
+			</p>						
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenuBold">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		<!--slide 4 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">Just copy and paste the code in the console. You should now see something like this:</p>
+		    <img src="assets/images/tutorial2/remix-deploy.png" style="width:100%; padding-left: 10%;" ><br><br>
+			<p class="paraTutorial">After pasting the code in the Remix IDE compiler, we will see that there is no error found on the contract, so we can go in the <span class="spanBold"> Run </span> tab (just next to <span class="spanBold"> Compile </span>). Here we will be able to see the network that we are using (in our case Ropsten), the account (the Metamask wallet address) and the Gas Limit (the Gas has direct conversion with ETH, and it is used to pay fees in order to use the ethereum blockchain; gas limit = the maximum amount of gas which we are willing to pay in order to deploy our contract)<br>
+
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenuBold">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 5 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">To deploy our contract, you will need to press on <span class="spanBold"> Create </span>, and a popup will appear to submit our transaction.</p>
+		    <img src="assets/images/tutorial2/remix-simple-storage.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenuBold">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 6 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		   <p class="paraTutorial">Thanks to Remix interface we will be able to find helpful information easily like when the transaction has been minter, from which address, the amount of gas consumed or the transaction hash.</p>
+		    <img src="assets/images/tutorial2/metamask.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenuBold">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 7 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <img src="assets/images/tutorial2/pending-tranzaction.png" style="width:100%; padding-left: 10%;" ><br><br>
+		    <p class="paraTutorial">Here is the transaction hash that we`ve generated:</p>
+			<p class="paraTutorial"><a href="https://ropsten.etherscan.io/tx/0x492bf20cf867fa0262700fb0645bfa20e7be216e4d6fdf4b5e3ed7a8bd9e4ad4"> https://ropsten.etherscan.io/tx/0x492bf20cf867fa0262700fb0645bfa20e7be216e4d6fdf4b5e3ed7a8bd9e4ad4 </a>, using an alternate way to view the same info as in Remix IDE, but on <a href="https://ropsten.etherscan.io/"> Ethereum Ropsten Explorer. </a></p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenuBold">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 8 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">In this explorer we can verify our smart contract, by making it public, and allowing anyone to read it and interact with it from their interfaces. In order to do that, we need to navigate to our contract 0xEe629816757ff7650c6f420edECdfFe48C5F71Ca, click on it then Contract Code –> <span class="spanBold"> Verify and Publish </span>.</p>
+		    <img src="assets/images/tutorial2/verify-publish.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenuBold">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 9 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+			<p class="paraTutorial">You will need to add the same Solidity Contract Code , same code as the one we`ve entered in Remix IDE before:<br><br></p>
+			<?prettify?>
+			<pre class="prettyprint">
+			pragma solidity ^0.4.0;
+
+			contract SimpleStorage {
+				uint storedData;
+
+				function set(uint x) public {
+					storedData = x;
+				}
+
+				function get() public constant returns (uint) {
+					return storedData;
+				}
+			}
+			</pre>
+			<p class="paraTutorial"><span class="spanBold"> Contract name</span>: in our code the contract it’s called <span class="spanBold"> SimpleStorage </span> <br></p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenuBold">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 10 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial"><span class="spanBold">Compiler</span>: in remix if we go on the Settings tab, we will see that our solidity compiler version is <span class="spanBold"> 0.4.21+commit.dfe3193c.Emscripten.clang </span></p>
+		    <img src="assets/images/tutorial2/compile.png" style="width:60%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenuBold">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 11 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Now the verification process screen should look like this:</p>
+		    <img src="assets/images/tutorial2/verification.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenuBold">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 12 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Then, we need to press Verify and Publish, and if everything matches with the Remix IDE deployed code, our contract will be verified.</p>
+		    <img src="assets/images/tutorial2/biteCode.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenuBold">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 13 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Starting now, everyone can see Contract Source and read the smart Contract that we`ve wrote.</p>
+		    <img src="assets/images/tutorial2/contract-address.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenuBold">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 14 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Now that we have deployed and verified our contract, let`s see how we can interact with it from Remix IDE:</p>
+			<ul style="color: #8cbfd1; padding-left: 15%;">
+				<li>Once we deploy it, we will be able to see our functions from the smart contract:<span class="spanBold"> set </span> and <span class="spanBold"> get </span> can be used to modify or to retrieve the value of the variable <span class="spanBold"> StoredData </span> </li>
+				<li>If we want to add the value 5, we need to press on set, to confirm the transaction, then when we will press again on <span class="spanBold"> get </span>, the contract will return our value – 5.</li>
+			</ul>
+		    <img src="assets/images/tutorial2/set-get-contract.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenuBold">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 15 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">We can check the value stored on our smart contract`s variable on etherscan:</p>
+			<p class="paraTutorial"><a href="https://ropsten.etherscan.io/address/0xee629816757ff7650c6f420edecdffe48c5f71ca#readContract"> https://ropsten.etherscan.io/address/0xee629816757ff7650c6f420edecdffe48c5f71ca#readContract </a></p><br>
+		    <img src="assets/images/tutorial2/ether-scan.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenuBold">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 16 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">In this moment , everyone can call the set function and change the storedData variable as the contract doesn’t have an owner defined.</p><br>							
+			<p class="paraTutorial">This time we will call the <span class="spanBold"> set </span> function from another Interface:<a href="https://mycrypto.com or https://www.myetherwallet.com"> https://mycrypto.com or https://www.myetherwallet.com </a>, be sure to always double check when you access these sites because there are a lot of phishing sites which are trying to steal your money.</p><br>
+			<p class="paraTutorial">First we have to select the network on <a href="https://mycrypto.com"> https://mycrypto.com </a> in order to access our contract on Ropsten Network, so you should see something like this:</p><br>
+		    <img src="assets/images/tutorial2/interact-with-contract.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenuBold">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 17 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Second, we will need to go to https://mycrypto.com -> Contracts, where we can add our Contract Address: 0xEe629816757ff7650c6f420edECdfFe48C5F71Ca  and the ABI/JSON interface. You can easily find your ABI/JSON contract in the Ropsten explorer, if you will go to our contract 0xEe629816757ff7650c6f420edECdfFe48C5F71Ca and press on Contract Source . You will now see Contract ABI, just copy-and paste the code in the ABI/JSON interface.</p><br>							
+		    <img src="assets/images/tutorial2/abi-interface.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenuBold">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 18 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">Now we`ve managed to access our contract and see the same functions like in Remix IDE. Let’s change the value to from our variable to 10, in order to see what happens in our contract when we will call function <span class="spanBold"> get </span>.</p><br>							
+		    <p class="paraTutorial">To submit the transaction in <a href="https://mycrypto.com"> https://mycrypto.com </a>, we can access and unlock our wallet in many ways, depending on the type of the walled that we have. The safest way to store your founds it is a cold storage device like Ledger Wallet or Trezor. But as we are using a test network, we don`t have to be so precautious, and we will use a private key method ( not safe to store the private key on any online device ). Here is our private key <span class="spanBold"> 292cc36207842ce5374352d0413dc1bf2a2cd29fe2ec64e168a8da4bdd86cefc </span> from Ropsten, there are 0.10 ETH right now, feel free to use them if needed.</p>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenuBold">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenu">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 19 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">We will <span class="spanBold"> Unlock </span> our wallet, then <span class="spanBold"> Write </span> (submit) the transaction:</p><br>							
+		    <img src="assets/images/tutorial2/unlock-write.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenuBold">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 20 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">We now have generated the transaction:</p><br>
+			<p class="paraTutorial"><a href="https://ropsten.etherscan.io/tx/0x2d4265ffd5c958509a38fb66834f623a26114911f0cd06035ec7599e4aab36f5" >https://ropsten.etherscan.io/tx/0x2d4265ffd5c958509a38fb66834f623a26114911f0cd06035ec7599e4aab36f5. </a> If we check it, we will see that the address <span class="spanBold"> 0xfed0abcbd0df8cc7743f2b0910b567f5cc6e56b0 </span> which called the function <span class="spanBold"> set </span>, it’s different that the one which deployed the contract.</p><br>				
+		    <img src="assets/images/tutorial2/transaction-confirmed.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenuBold">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 21 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <img src="assets/images/tutorial2/transaction-send.png" style="width:100%; padding-left: 10%;" ><br><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenuBold">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+		
+		<!--slide 22 -->
+		<div class="mySlides fade in";>
+		 <div class="row">
+		  <div class="column leftT">
+		    <p class="paraTutorial">And if we will go back to our contract on etherscan:</p>
+			<p class="paraTutorial"><a href="https://ropsten.etherscan.io/address/0xee629816757ff7650c6f420edecdffe48c5f71ca#readContract"> https://ropsten.etherscan.io/address/0xee629816757ff7650c6f420edecdffe48c5f71ca#readContract </a>, we will see the value of our variable`s value is now 10.</p>
+		    <img src="assets/images/tutorial2/variable-10.png" style="width:100%; padding-left: 10%;" ><br><br>
+		    <p class="paraTutorial">You should now be able to deploy, verify and interact with a smart contract on the Ethereum blockchain from the two of the best interfaces available currently. Please feel free to play with the tools, use your imaginations, and contact us if you need any help.</p><br>
+		  </div>
+		  <div class="column rightT">
+		   <span onclick="currentSlide(1)" class="rightMenu">Ropsten Test Network</span> <br></br>
+		   <span onclick="currentSlide(2)" class="rightMenu">Ethereum Ropsten Faucet</span> <br></br>
+		   <span onclick="currentSlide(3)" class="rightMenu">Pragma solidity ^0.4.0</span> <br></br>
+		   <span onclick="currentSlide(4)" class="rightMenu">Remix IDE Compiler</span> <br></br>
+		   <span onclick="currentSlide(5)" class="rightMenu">Deploy a Contract & Sign It </span> <br></br>
+		   <span onclick="currentSlide(7)" class="rightMenu">Verify a Transaction</span> <br></br>
+		   <span onclick="currentSlide(9)" class="rightMenu">Solidity Contract Code </span> <br></br>
+		   <span onclick="currentSlide(10)" class="rightMenu">Verify & Publish Contract</span> <br></br>
+		   <span onclick="currentSlide(14)" class="rightMenu">Interaction with SmartContract</span> <br></br>
+		   <span onclick="currentSlide(19)" class="rightMenuBold">Unlock Wallet & Submit Transaction</span> <br></br>
+		  </div>
+		 </div>		 		 
+		</div>
+			<a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next2" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+			<br>
+	</div>
+	
+	<!-- Content -->
+	<div class="service-form" id="contact">
+		<h3>If you want to learn more,</h3>
+        <h3>Let's have a <span>chat!</span></h3>
+		<form>
+			<div class="form-group">
+				<label for="name">Name:</label> <input class="form-control" id="name" name="name" type="text">
+			</div><!-- /.form-group -->
+			<div class="form-group">
+				<label for="email">Email:</label> <input class="form-control" id="email" name="email" type="email">
+			</div><!-- /.form-group -->
+			<div class="form-group">
+				<label for="message">Message:</label> 
+				<textarea class="form-control" id="message" name="message" rows="3"></textarea>
+			</div><!-- /.form-group -->
+				<button class="btn btn-default" type="submit">Submit</button>
+			</form>
+	</div><!-- /.service-form -->
+	<!-- Footer
+================================================== -->
+	<footer>
+		<p>Copyright © 2018 - dCipher</p>
+	</footer><!-- Scritps
+================================================== -->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/libraries/jquery-2.2.4.js">
+	</script> <!-- Bootstrap Core JavaScript -->
+	<script src="assets/js/libraries/bootstrap.js">
+	</script> <!-- JavaScript Libraries -->
+	<script src="assets/js/libraries/typed.js">
+	</script> 
+	<script src="assets/js/libraries/wow.js">
+	</script> <!-- Custom Particle Theme JavaScript -->
+	<script>
+	   var sentences = ["Tutorials"];
+	</script> 
+	<script src="assets/js/custom/service-item.js">	</script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="assets\js\custom\keyboard-arrows-navigation.js">  </script> <!-- keyboard arrow navigations -->
+	<!-- slideshow script -->
+	<script>
+		$(function(){
+			$("#containerTutorial1").hide();
+			$("#clickMe2").on("click", function(){
+			$("#containerTutorial2").toggle("slow");
+			$("#containerTutorial1").hide();
+			});
+		});
+		
+		$(function(){
+			$("#containerTutorial2").hide();
+			$("#clickMe1").on("click", function(){
+			$("#containerTutorial1").toggle("slow");
+			$("#containerTutorial2").hide();
+			});
+		});
+	</script>
+	
+	<!-- count no. of slides for first tutorial-->
+	<script>
+		var slideIndex1 = 1;
+		showSlides1(slideIndex1);
+
+		function plusSlides1(n) {
+		  showSlides1(slideIndex1 += n);
+		}
+
+		function currentSlide1(n) {
+		  showSlides1(slideIndex1 = n);
+		}
+
+		function showSlides1(n) {
+		  var i;
+		  var slides1 = document.getElementsByClassName("mySlides1");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides1.length) {slideIndex1 = 1}    
+		  if (n < 1) {slideIndex1 = slides1.length}
+		  for (i = 0; i < slides1.length; i++) {
+			  slides1[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides1[slideIndex1-1].style.display = "block";  
+		  dots[slideIndex1-1].className += " active";
+		}
+	</script>
+	
+	<!-- count no. of slides for second tutorial-->
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+</body>
+</html>
+
